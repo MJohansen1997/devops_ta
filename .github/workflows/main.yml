@@ -37,3 +37,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: web/build
+    - name: actualDeploy
+      working-directory: ./web
+      run: npm deploy
