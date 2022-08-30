@@ -39,4 +39,4 @@ jobs:
         folder: web/build
     - name: actualDeploy
       working-directory: ./web
-      run: npm deploy
+      run: npm run deploy
