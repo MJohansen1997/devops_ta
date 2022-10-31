@@ -22,15 +22,6 @@ function App() {
             <Route path={"*"} element={<h1>420 Blaze it</h1>} />
         </Routes>
         <Link to="about/link">Go to About</Link>
-        <Grid container direction={"column"} spacing={2}>
-            <Grid item xs={6} md={8}>
-                <TextField className="font-text">Hello, {username}</TextField>
-                <TextField className="no-text">Hello, {username}</TextField>
-            </Grid>
-            <Grid item xs={6} md={4}>
-                <Button variant="contained" onClick={(e)=>setUsername("Johnny")}>Skift navn </Button>
-            </Grid>
-        </Grid>
     </div>
   );
 }

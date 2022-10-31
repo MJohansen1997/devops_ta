@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import {giraffeStore} from "../stores/GiraffeStore";
-import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
+import {Grid } from "@mui/material";
 import {observer} from "mobx-react-lite";
 
 const Giraffe = () => {
+    const [name, setName] = useState("");
+
+
     return (
         <Grid container direction={"column"}>
             <Grid item>
@@ -13,9 +15,6 @@ const Giraffe = () => {
                         <li key={key}>{name}</li>
                     )}
                 </ul>
-            </Grid>
-            <Grid item>
-                <Button onClick={() => giraffeStore.addGiraffe("eLMER")}>Tilføj eLMER </Button>
             </Grid>
         </Grid>
     )
